@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+    head
+        title Hritwick Dance Academy
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul
+                div#logo 
+                    img(src="/static/img/logo.png")
+                    | HDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+
+        section#introSection
+            div Welcome to Hritwick's Dance Academy
+            div.small Eat Sleep Dance Repeat
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/1.png")
+                    div.card-content 
+                        p This is the best dance academy of universe     
+            div.card
+                h3 Dance the way you like 
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/2.png")
+                    div.card-content 
+                        p This is the best dance academy of universe
+            div.card
+                h3 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/3.png")
+                    div.card-content 
+                        p This is the best dance academy of universe
+        section#sponserSection
+            h2 Our Sponsor 
+            div#sponsors
+                img(src="/static/img/logo1.png" alt="sponsor image" class="spImage")
+                img(src="/static/img/logo2.png" alt="sponsor image" class="spImage")
+                img(src="/static/img/logo3.png" alt="sponsor image" class="spImage")
+                img(src="/static/img/logo4.png" alt="sponsor image" class="spImage")
+        footer#footer 
+            | Copyright © 2022 HritwickDanceAcademy.com | All right reserved      
+        script
+            include ../static/index.js
